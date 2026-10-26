@@ -35,4 +35,3 @@ Poziomy:
 2. Zdjęcie trafia do modelu wytrenowanego w Teachable Machine.
 3. Model zwraca nazwę klasy i pewność rozpoznania.
 4. Aplikacja wyświetla wynik, wyjaśnienie, poradę i poziom szkodliwości.
-
