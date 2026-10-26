@@ -1,0 +1,5 @@
+discord.py
+tensorflow
+pillow
+numpy
+nltk
