@@ -1,23 +1,24 @@
-## Oto pomysł na mój projekt:
-> # KlimaDetektyw
+# KlimaDetektyw
 
-Aplikacja z AI, która rozpoznaje na zdjęciu rzeczy szkodzące klimatowi, wyjaśnia, dlaczego są szkodliwe, i podpowiada, jak to zmienić.
+Bot na Discorda z AI, który rozpoznaje na zdjęciach rzeczy szkodzące klimatowi, podpowiada, gdzie wyrzucić śmieci, i pomaga z rzeczami nieoczywistymi.
 
 
 ## Problem
 
-Wiele rzeczy wokół nas po cichu przyczynia się do zmian klimatu: samochody, spalanie węgla, wycinanie lasów, hodowla zwierząt czy marnowanie prądu. Większość ludzi nawet o tym nie myśli, bo nie widzi związku między codziennymi rzeczami a klimatem.
+Wiele rzeczy wokół nas po cichu przyczynia się do zmian klimatu: samochody, spalanie węgla, wycinanie lasów, hodowla zwierząt czy marnowanie prądu. Do tego ludzie często nie wiedzą, co zrobić z nietypowymi rzeczami.
 
 ## Rozwiązanie
 
-KlimaDetektyw pozwala wrzucić zdjęcie, a model AI:
+KlimaDetektyw to bot na Discorda, który ma trzy funkcje:
 
-1. rozpoznaje, co jest na zdjęciu,
-2. ocenia, czy to szkodzi klimatowi,
-3. wyjaśnia dlaczego,
-4. podaje prostą poradę, co można zrobić lepiej.
+1. Rozpoznawanie zdjęć** - wrzucasz zdjęcie, a AI mówi, czy to szkodzi klimatowi, dlaczego i co zrobić lepiej.
+2. Gdzie to wyrzucić?** - bot mówi, do którego kosza wyrzucić daną rzecz, także te nieoczywiste.
+3. Co się stanie, jeśli...? - bot odpowiada na pytania o skutki różnych sytuacji dla klimatu i przyrody.
 
-Jeśli na zdjęciu jest coś, co pomaga klimatowi (np. rower albo panele słoneczne), aplikacja to docenia.
+Bot odpowiada uczciwie: jeśli coś jest mało szkodliwe, nie straszy, a jeśli jest szkodliwe, wyjaśnia dlaczego.
+
+## Co rozpoznaje AI na zdjęciach
+Pojazdy, Produkty,  Energia,  Przyroda.
 
 
 Poziomy:
@@ -26,12 +27,27 @@ Poziomy:
 - **Niski** - mały wpływ, ale warto zmienić nawyk
 - **Dobry** - pomaga klimatowi
 
----
-
 
 ## Jak to działa
 
-1. Użytkownik wrzuca zdjęcie.
-2. Zdjęcie trafia do modelu wytrenowanego w Teachable Machine.
-3. Model zwraca nazwę klasy i pewność rozpoznania.
-4. Aplikacja wyświetla wynik, wyjaśnienie, poradę i poziom szkodliwości.
+Zdjęcia
+1. Użytkownik wysyła zdjęcie z komendą `!sprawdz`.
+2. Bot pobiera zdjęcie i przekazuje je do modelu wytrenowanego w Teachable Machine.
+3. Model zwraca nazwę rzeczy i pewność rozpoznania.
+4. Bot odpisuje z wyjaśnieniem, poradą i poziomem szkodliwości.
+
+**Pytania tekstowe (`!gdzie`, `!co jesli`):
+1. Bot dostaje pytanie od użytkownika.
+2. NLTK dzieli pytanie na słowa i szuka słów kluczowych (np. "szampan", "ocean").
+3. Bot znajduje pasującą odpowiedź w bazie wiedzy i ją wysyła.
+4. Jeśli nie zna odpowiedzi, mówi to wprost.
+
+
+## Uwaga
+
+Zasady segregacji śmieci mogą się trochę różnić w zależności od gminy.
+
+
+## Autor
+
+Robert
