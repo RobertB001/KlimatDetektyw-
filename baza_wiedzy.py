@@ -1,4 +1,4 @@
-%%writefile baza_wiedzy.py
+
 GDZIE_WYRZUCIC = {
     "pudełko po pizzy" "Tłuste części do zmieszanych, czyste (np. pokrywka) do papieru."
     "szklanka" "Zawiń w gazetę lub torebkę i wyrzuć do zmieszanych."
