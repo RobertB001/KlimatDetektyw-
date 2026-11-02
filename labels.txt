@@ -1,0 +1,5 @@
+0 samochod
+1 rower
+2 plastik
+3 pudelko_po_pizzy
+4 las
