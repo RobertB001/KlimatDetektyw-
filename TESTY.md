@@ -50,3 +50,5 @@ Sprawdzić, czy bot poprawnie rozpoznaje zdjęcia, odpowiada na wszystkie komend
 1. Najpierw wszystkie zadania z priorytetem Wysoki
 2. Potem Średni
 3. Na końcu Niski
+## Wyniki testów
+Wszystkie testy zaliczone.
